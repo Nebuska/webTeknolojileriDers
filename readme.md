@@ -1,6 +1,5 @@
-Web Teknolojileri Projesi Tasarım:
-
 V0.1 (05.05.2020)
+ Web Teknolojileri Projesi Tasarım
  - Ana sayfa tasarımı hazırlanacak
  - Bursa şehri hakkında bilgiler içeren bir sayfa tasarlanacak
  - Benim hakkımda bilgiler içeren bir sayfa tasarlanacak
