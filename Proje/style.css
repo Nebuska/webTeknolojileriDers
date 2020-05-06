@@ -1,0 +1,41 @@
+body{
+	background-color: #0C0F13;
+}
+.AnaBaslik{
+	font-family: 'Modak', cursive;
+	font-size: 60px;
+	color:	#0C0F13;
+}
+.YanBaslik{
+	font-family: 'Modak', cursive;
+	font-size: 40px;
+	color: #0C0F13;
+}
+.btn{
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #0C0F13;
+	font-family: 'Modak', cursive;
+	font-size: 20px;
+	color: rgb(184, 184, 184);
+	border-color: rgb(184, 184, 184);
+}
+.btn:hover{
+	background-color: rgb(184, 184, 184);
+	color: #0C0F13;
+}
+.btn-secili{
+	background-color: rgb(184, 184, 184);
+	color: #0C0F13;
+	pointer-events: none;
+}
+
+h3{
+	color: rgb(184, 184, 184);
+}
+p{
+	color: 	#CCCCC6;
+}
+.jumbotron{
+	background-color: #0C0F13;
+}
