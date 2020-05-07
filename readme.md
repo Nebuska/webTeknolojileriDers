@@ -8,6 +8,15 @@ V0.1 (05.04.2020)
  - Login sayfası eklenecek
  - İletişim Sayfası eklenecek
  - sayfalar için css dosyası hazırlanacak
+
 V0.2 (06.05.2020)
  + sayfalar için css dosyası
  + Arka plan tasarımı hazırlandı
+ V0.3 (07.05.2020)
+ 
+ + css düzenlendi
+ + yeni oluşturulan sayfalar daha kolay düzenlenebilsin diye template oluşturuldu
+ + login sayfası hazırlandı
+ + iletişim sayfası için arka plan hazırlandı
+ - iletişim ve login arayüzü düzenlenecek
+ + CV sayfası hazırlandı

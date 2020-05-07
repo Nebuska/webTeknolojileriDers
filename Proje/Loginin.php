@@ -1,9 +1,20 @@
+<?php
+$Kullanici = "Furkan Cebar";
+$eposta = "b191210088@ogr.sakarya.edu.tr";
+$sifre = "123";
+
+if ($eposta != $_POST["mail"] || $sifre != $_POST["password"])
+{
+	header("Location: Login.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="tr">
 
 <head>
 
-	<title>Hakkımda</title>
+	<title>Giriş</title>
 	<link rel="icon" href="logo.jpg">
 
 	<meta charset="utf-8">
@@ -43,44 +54,21 @@
 	<div class="navbar justify-content-center">
 		<a href="Anasayfa.html" class="btn">Anasayfa</a>
 		<a href="Sehrim.html" class="btn">Şehrim</a>
-		<a href="#" class="btn btn-secili">Hakkımda</a>
+		<a href="Hakkimda.html" class="btn">Hakkımda</a>
 		<a href="CV.html" class="btn">CV</a>
 		<a href="Iletisim.html" class="btn">İletişim</a>
-		<a href="Login.html" class="btn">Giriş</a>
+		<a href="#" class="btn btn-secili">Giriş</a>
 	</div>
 
 	<div class="icerik-kutusu container">
-		<div class="row">
-			<div class="col-sm-3">
-				<img class="img-fluid rounded" src="logo.jpg">
-			</div>
-			<div class="col-sm-9">
-				<h3>
-					Hakkımda
-				</h3>
-				<p>
-					Merhaba, Benim adım Furkan Cebar. Sakarya Üniversitesi Bilgisayar Mühendisliği
-					bölümünde okuyorum. Web Teknolojileri Projesi olarak tasarladığım Web sitesine
-					Hoşgeldiniz. <br>
-				</p>
-			</div>
-		</div>
+	<div class="row">
+	<div class="col-sm-5"></div>
+	<div class="col-sm-2" style="background-color: rgb(184, 184, 184); border-radius: 6px;">
+		<br>
+			<p style="color: black">Hoş geldiniz <?php echo $Kullanici;  ?></p>
+		<br>
 	</div>
-
-	<div class="icerik-kutusu container">
-		<div class="row">
-			<div class="col-sm-9">
-				<h3>
-					Başlık
-				</h3>
-				<p>
-					içerik
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<img class="img-fluid rounded" src="logo.jpg">
-			</div>
-		</div>
+	</div>
 	</div>
 
 	<div class="text-center" style="margin-bottom: 0;">© 2019-2020 Furkan CEBAR</div>

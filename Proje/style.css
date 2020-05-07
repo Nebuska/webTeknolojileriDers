@@ -1,17 +1,28 @@
 body{
-	background-color: #0C0F13;
+	background-color: #4e5252;
 }
-.AnaBaslik{
+.baslik{
+	padding: 2rem 1rem; 
+	background-color: #212426;
+}
+div.baslik > div{
+	background-color: rgb(184, 184, 184); 
+	border-radius: 20px;
+}
+div.baslik > div > h1{
 	font-family: 'Modak', cursive;
 	font-size: 60px;
-	color:	#0C0F13;
+	color:	#212426;
 }
-.YanBaslik{
+div.baslik > div > h3{
 	font-family: 'Modak', cursive;
 	font-size: 40px;
-	color: #0C0F13;
+	color: #212426;
 }
-.btn{
+div.navbar{
+	background-color: rgb(24,26,28);
+}
+div.navbar > a.btn{
 	margin-left: 5px;
 	margin-right: 5px;
 	background-color: #0C0F13;
@@ -20,22 +31,24 @@ body{
 	color: rgb(184, 184, 184);
 	border-color: rgb(184, 184, 184);
 }
-.btn:hover{
+div.navbar > a.btn:hover{
 	background-color: rgb(184, 184, 184);
 	color: #0C0F13;
 }
-.btn-secili{
+div.navbar > a.btn-secili{
 	background-color: rgb(184, 184, 184);
 	color: #0C0F13;
 	pointer-events: none;
 }
-
-h3{
+.icerik-kutusu{
+	background-color: rgb(24,26,28);
+	margin-top: 1rem; 
+	padding: 1rem; 
+	border-radius: 1rem;
+}
+div.icerik-kutusu > div > div > h3{
 	color: rgb(184, 184, 184);
 }
-p{
+div.icerik-kutusu > div > div > p{
 	color: 	#CCCCC6;
-}
-.jumbotron{
-	background-color: #0C0F13;
 }
