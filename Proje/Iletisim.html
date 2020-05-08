@@ -24,6 +24,42 @@
 
 	<link href="style.css" rel="stylesheet">
 
+	<script>
+		function kontrolet()
+		{
+			if (isim.value == "")
+			{
+				window.alert("İsim girmeden ilerleyemezsiniz!");
+				return false;
+			}
+			if (soyisim.value == "")
+			{
+				window.alert("Soyisim girmeden ilerleyemezsiniz!");
+				return false;
+			}
+			if (email.value == "")
+			{
+				window.alert("Mail adresi girmeden ilerleyemezsiniz!");
+				return false;
+			}
+			if (kiz.checked == false && erkek.checked == false)
+			{
+				window.alert("Cinsiyet girmeden ilerleyemezsiniz!");
+				return false;
+			}
+			if (istek.checked == false && sikayet.checked == false && soru.checked == false)
+			{
+				window.alert("sebep girmeden ilerleyemezsiniz!");
+				return false;
+			}
+			if (ileti.value == "")
+			{
+				window.alert("İleti girmeden ilerleyemezsiniz!");
+				return false;
+			}
+		}
+	</script>
+
 </head>
 
 <body>
@@ -50,14 +86,17 @@
 	</div>
 
 	<div class="icerik-kutusu container justify-content-center">
-		<form action="Gonder.php" method="POST">
-			<table style="background-color: antiquewhite;">
+		<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4,5" style="background-color: rgb(184, 184, 184); border-radius: 6px; padding: 1rem;">
+		<form action="Gonder.php" method="POST" onsubmit="return kontrolet()">
+			<table>
 				<tr>
 					<td>
 						İsim:
 					</td>
 					<td>
-						<input type="text" name="isim">
+						<input type="text" name="isim" id="isim">
 					</td>
 				</tr>
 				<tr>
@@ -65,7 +104,7 @@
 						Soyisim:
 					</td>
 					<td>
-						<input type="text" name="soyisim">
+						<input type="text" name="soyisim" id="soyisim">
 					</td>
 				</tr>
 				<tr>
@@ -73,7 +112,7 @@
 						Email:
 					</td>
 					<td>
-						<input type="email" required name="email">
+						<input type="email" name="email" id="email">
 					</td>
 				</tr>
 				<tr>
@@ -81,8 +120,8 @@
 						Cinsiyetiniz:
 					</td>
 					<td>
-						<input type="radio" name="cinsiyet" value="erkek"> Erkek <br>
-						<input type="radio" name="cinsiyet" value="kiz"> Kiz
+						<input type="radio" name="cinsiyet" value="erkek" id="erkek"> Erkek <br>
+						<input type="radio" name="cinsiyet" value="kiz" id="kiz"> Kiz
 					</td>
 				</tr>
 				<tr>
@@ -90,9 +129,9 @@
 						İletişim Sebebiniz:
 					</td>
 					<td>
-						<input type="radio" name="sebep" value="sikayet"> Şikayet <br>
-						<input type="radio" name="sebep" value="istek"> İstek <br>
-						<input type="radio" name="sebep" value="soru"> Soru <br>
+						<input type="checkbox" name="sikayet" value="sikayet" id="sikayet"> Şikayet <br>
+						<input type="checkbox" name="istek" value="istek" id="istek"> İstek <br>
+						<input type="checkbox" name="soru" value="soru" id="soru"> Soru <br>
 					</td>
 				</tr>
 				<tr>
@@ -113,7 +152,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<textarea rows="5" cols="50" name="ileti"></textarea>
+						<textarea rows="5" cols="50" name="ileti" id="ileti"></textarea>
 					</td>
 				</tr>
 				<tr>
@@ -126,6 +165,8 @@
 				</tr>
 			</table>
 		</form>
+		</div>
+</div>
 	</div>
 
 	<div class="text-center" style="margin-bottom: 0;">© 2019-2020 Furkan CEBAR</div>
