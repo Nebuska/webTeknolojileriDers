@@ -31,3 +31,7 @@ V0.5 (10.05.2020)
  + Ulu Cami sayfası resimler haricinde tamamlandı.
  + Hakkımda sayfası resimler haricinde tamamlandı.
  + Ana sayfa resimler haricinde tamamlandı.
+
+V1.0 (10.05.2020)
+ + Resimler eklendi.
+ + Ulu cami sayfasına slider ve google maps iframe'i eklendi.
