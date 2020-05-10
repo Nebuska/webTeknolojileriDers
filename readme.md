@@ -25,3 +25,9 @@ V0.4 (08.05.2020)
  + iletişim sayfası bitti
  + gönderi görüntüleme bitti
  + Sehrim sayfası için slider eklendi
+
+V0.5 (10.05.2020)
+ + Sehrim sayfası resimler haricinde tamamlandı.
+ + Ulu Cami sayfası resimler haricinde tamamlandı.
+ + Hakkımda sayfası resimler haricinde tamamlandı.
+ + Ana sayfa resimler haricinde tamamlandı.
